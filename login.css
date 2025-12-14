@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto",Sans-Serif;
+  height:100vh;
+  background-color: #ededef;
+  position: relative;
+}
+:root{
+  --primary:
+  --secondary:
+  --accent:
+  text-color:
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.container{
+  padding:12px 16px;
+  margin:10px;
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  border-radius: 6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  
+}
+.header-right{
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+header{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+.logo {
+  font-size: 1.2rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position:absolute;
+  top:-35px;
+  left:5px;
+  width: fit-content;
+  color: var(--text-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+}
+
+.logo span {
+  font-size: 1rem;
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.logo span:hover {
+  opacity: 0.8;
+  color: #FF6B6B;
+}
+.login-instructions{
+  color:rgba(0,0,0,0.7);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.input-form{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  position:relative;
+}
+.float-icon{
+  position:absolute;
+  right:0px;
+  top:36%;
+  background-color: rgba(0,0,0,0.5);
+  color:white;
+  padding:10.5px 14px;
+  padding-right: 17px;
+  border-start-end-radius: 8px;
+  border-end-end-radius: 8px;
+  cursor:pointer;
+  transition:all ease 0.3s;
+}
+.float-icon:hover{
+  opacity:0.7;
+}
+.input-form input{
+  padding:8px 14px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  outline:none;
+  border: none;
+  border-radius: 8px;
+}
+.input-form input:hover{
+  outline:1.5px solid rgb(0 115 240);
+}
+.input-form label{
+  font-weight: 500;
+}
+.auth-section{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.auth-section-left{
+  display: flex;
+  gap:10px;
+}
+.auth-section a{
+  text-decoration: none;
+  font-size: 14px;
+}
+button{
+  padding:6px 14px;
+  background-color: rgb(0,115,200);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border:none;
+  width:100%;
+  text-align: center;
+  color:white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor:pointer;
+  transition:all ease 0.3s;
+}
+button:hover{
+  transform:translateY(-4px);
+  opacity:0.8;
+}
+.socials-section h3{
+  font-weight: 500;
+  font-size: 15px;
+  color:rgba(0 0 0 0.7);
+}
+.socials-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.socials{
+  display: flex;
+  font-size: 2.3rem;
+  gap: 20px;
+  margin-top: 20px;
+}
+.socials > :nth-child(1){
+  color:black;
+}
+.socials > :nth-child(2){
+  color:rgb(0,119,240);
+}
+.socials > :nth-child(3){
+  background: linear-gradient(45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+  border-radius: 5px;
+}
+.socials-icon{
+  position:relative;
+  transition:all ease 0.2s;
+}
+.socials-icon:hover{
+  transform:scale(1.1);
+}
+footer{
+  display: flex;
+  font-size: 14px;
+  margin-top: 20px;
+  justify-content: center;
+}
+footer a{
+  text-decoration: none;
+}
+.tooltip1,
+.tooltip2,
+.tooltip3,
+.tooltip4{
+  font-size: 0.6rem;
+  position:absolute;
+  top:-25px;
+  opacity:0;
+  left:-10px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding:3px;
+  text-wrap: nowrap;
+  pointer-events: none;
+  transition:all ease 0.2s;
+}
+.tooltip1{
+  background-color: black;
+  color: white;
+}
+.tooltip2{
+  background-color: rgb(0,119,240);
+  color: white;
+}
+.tooltip3{
+  background-color: #E1306C;  
+  color: white;
+}
+.tooltip4{
+  background-color: #4285F4;
+  color: white;
+}
+.socials-icon:hover .tooltip1,
+.socials-icon:hover .tooltip2,
+.socials-icon:hover .tooltip3,
+.socials-icon:hover .tooltip4{
+  opacity:1;
+}
+
